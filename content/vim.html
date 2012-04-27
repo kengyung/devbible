@@ -1,0 +1,1029 @@
+
+<ul data-role="listview" data-theme="c" data-dividertheme="b" data-filter="true" data-filter-placeholder="Search VIM..." data-filter-theme="c">
+
+<li data-role="list-divider">Working with files</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:e filename
+			</div>
+			<div class="ui-block-b">
+			Open a new file. You can use the Tab key for automatic file name completion, just like at the shell command prompt.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:w filename
+			</div>
+			<div class="ui-block-b">
+			Save changes to a file. If you don't specify a file name, Vim saves as the file name you were editing. For saving the file under a different name, specify the file name.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:q
+			</div>
+			<div class="ui-block-b">
+			Quit Vim. If you have unsaved changes, Vim refuses to exit.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:q!
+			</div>
+			<div class="ui-block-b">
+			Exit Vim without saving changes.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:wq
+			</div>
+			<div class="ui-block-b">
+			Write the file and exit.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:x
+			</div>
+			<div class="ui-block-b">
+			Almost the same as :wq, write the file and exit if you've made changes to the file. If you haven't made any changes to the file, Vim exits without writing the file.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+<li data-role="list-divider">Moving around in the file
+<p></p>
+<p class="ui-li-desc"><i>These Vim commands and keys work both in command mode and visual mode.</i></p>
+</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			j or Up Arrow	
+			</div>
+			<div class="ui-block-b">
+			Move the cursor up one line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			k or Down Arrow	
+			</div>
+			<div class="ui-block-b">
+			Down one line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			h or Left Arrow	
+			</div>
+			<div class="ui-block-b">
+			Left one character.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			l or Right Arrow
+			</div>
+			<div class="ui-block-b">
+			Right one character.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			e	
+			</div>
+			<div class="ui-block-b">
+			To the end of a word.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			E	
+			</div>
+			<div class="ui-block-b">
+			To the end of a whitespace-delimited word.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			b	
+			</div>
+			<div class="ui-block-b">
+			To the beginning of a word.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			B	
+			</div>
+			<div class="ui-block-b">
+			To the beginning of a whitespace-delimited word.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			0	
+			</div>
+			<div class="ui-block-b">
+			To the beginning of a line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			^	
+			</div>
+			<div class="ui-block-b">
+			To the first non-whitespace character of a line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			$	
+			</div>
+			<div class="ui-block-b">
+			To the end of a line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			H	
+			</div>
+			<div class="ui-block-b">
+			To the first line of the screen.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			M	
+			</div>
+			<div class="ui-block-b">
+			To the middle line of the screen.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			L	
+			</div>
+			<div class="ui-block-b">
+			To the the last line of the screen.
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:n	
+			</div>
+			<div class="ui-block-b">
+			Jump to line number n. For example, to jump to line 42, you'd type :42
+			</div>
+
+		</div>
+		</li><!-- Row End -->		
+		
+		<li data-role="list-divider">Inserting and overwriting text</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			i
+			</div>
+			<div class="ui-block-b">
+			Insert before cursor.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			a
+			</div>
+			<div class="ui-block-b">
+			Append after cursor.
+			</div>
+
+		</div>
+		
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			A
+			</div>
+			<div class="ui-block-b">
+			Append to the end of the current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			o
+			</div>
+			<div class="ui-block-b">
+			Open a new line below and insert.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			O
+			</div>
+			<div class="ui-block-b">
+			Open a new line above and insert.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			C
+			</div>
+			<div class="ui-block-b">
+			Change the rest of the current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			r
+			</div>
+			<div class="ui-block-b">
+			Overwrite one character. After overwriting the single character, go back to command mode.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			R
+			</div>
+			<div class="ui-block-b">
+			Enter insert mode but replace characters rather than inserting.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+			<div class="ui-grid-a">
+			<div class="ui-block-a">
+			ESC Key
+			</div>
+			<div class="ui-block-b">
+			Exit insert/overwrite mode and go back to command mode.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+
+<li data-role="list-divider">Deleting text</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			x
+			</div>
+			<div class="ui-block-b">
+			Delete characters under the cursor.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			X	
+			</div>
+			<div class="ui-block-b">
+			Delete characters before the cursor.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			dd or :d	
+			</div>
+			<div class="ui-block-b">
+			Delete the current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+
+
+
+
+<li data-role="list-divider">Entering visual mode</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			v	
+			</div>
+			<div class="ui-block-b">
+			Start highlighting characters. Use the normal movement keys and commands to select text for highlighting.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			V	
+			</div>
+			<div class="ui-block-b">
+			Start highlighting lines.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			ESC key	
+			</div>
+			<div class="ui-block-b">
+			Exit visual mode and return to command mode.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+<li data-role="list-divider">Editing blocks of text
+<p></p>
+<p class="ui-li-desc"><i>
+Note: the Vim commands marked with (V) work in visual mode, when you've selected some text. 
+<br>
+The other commands work in the command mode, when you haven't selected any text.
+</i>
+</p>
+</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			~	
+			</div>
+			<div class="ui-block-b">
+			Change the case of characters. This works both in visual and command mode. In visual mode, change the case of highlighted characters. In command mode, change the case of the character uder cursor.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			&#62; 
+			</div>
+			<div class="ui-block-b">
+			(V)	Shift right (indent).
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			&#60; 
+			</div>
+			<div class="ui-block-b">
+			(V)	Shift left (de-indent).
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			c 
+			</div>
+			<div class="ui-block-b">
+			(V)	Change the highlighted text.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			y 
+			</div>
+			<div class="ui-block-b">
+			(V)	Yank the highlighted text. In Windows terms, "copy the selected text to clipboard."
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			d 
+			</div>
+			<div class="ui-block-b">
+			(V)	Delete the highlighted text. In Windows terms, "cut the selected text to clipboard."
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			yy or :y or Y	
+			</div>
+			<div class="ui-block-b">
+			Yank the current line. You don't need to highlight it first.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			dd or :d	
+			</div>
+			<div class="ui-block-b">
+			Delete the current line. Again, you don't need to highlight it first.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			p	
+			</div>
+			<div class="ui-block-b">
+			Put the text you yanked or deleted. In Windows terms, "paste the contents of the clipboard". Put characters after the cursor. Put lines below the current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			P	
+			</div>
+			<div class="ui-block-b">
+			Put characters before the cursor. Put lines above the current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+		
+		
+		
+		
+<li data-role="list-divider">Undo and redo</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			u	
+			</div>
+			<div class="ui-block-b">
+			Undo the last action.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			U	
+			</div>
+			<div class="ui-block-b">
+			Undo all the latest changes that were made to the current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			Ctrl + r	
+			</div>
+			<div class="ui-block-b">
+			Redo.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+
+
+
+
+<li data-role="list-divider">Search</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			/pattern	
+			</div>
+			<div class="ui-block-b">
+			Search the file for pattern.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			n	
+			</div>
+			<div class="ui-block-b">
+			Scan for next search match in the same direction.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			N	
+			</div>
+			<div class="ui-block-b">
+			Scan for next search match but opposite direction.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+
+		
+		
+		
+
+
+<li data-role="list-divider">Replace</li>
+
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<u>
+			Vim Command
+			</u>
+			</div>
+			<div class="ui-block-b">
+			<u>
+			Action
+			</u>
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+		<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:rs/foo/bar/a	
+			</div>
+			<div class="ui-block-b">
+			Substitute foo with bar. r determines the range and a determines the arguments.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			The range (r) can be
+			</div>
+			<div class="ui-block-b">
+			
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			nothing	
+			</div>
+			<div class="ui-block-b">
+			Work on current line only.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			number	
+			</div>
+			<div class="ui-block-b">
+			Work on the line whose number you give.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			%	
+			</div>
+			<div class="ui-block-b">
+			The whole file.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			Arguments (a) can be
+			</div>
+			<div class="ui-block-b">
+			
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			g	
+			</div>
+			<div class="ui-block-b">
+			Replace all occurrences in the line. Without this, Vim replaces only the first occurrences in each line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			i	
+			</div>
+			<div class="ui-block-b">
+			Ignore case for the search pattern.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			I	
+			</div>
+			<div class="ui-block-b">
+			Don't ignore case.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			c	
+			</div>
+			<div class="ui-block-b">
+			Confirm each substitution. You can type y to substitute this match, n to skip this match, a to substitute this and all the remaining matches ("Yes to all"), and q to quit substitution.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			Examples
+			</div>
+			<div class="ui-block-b">
+			
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:452s/foo/bar/	
+			</div>
+			<div class="ui-block-b">
+			Replace the first occurrence of the word foo with bar on line number 452.			
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:s/foo/bar/g
+			</div>
+			<div class="ui-block-b">
+				Replace every occurrence of the word foo with bar on current line.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:%s/foo/bar/g	
+			</div>
+			<div class="ui-block-b">
+			Replace every occurrence of the word foo with bar in the whole file.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:%s/foo/bar/gi	
+			</div>
+			<div class="ui-block-b">
+			The same as above, but ignore the case of the pattern you want to substitute. This replaces foo, FOO, Foo, and so on.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+		
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:%s/foo/bar/gc	
+			</div>
+			<div class="ui-block-b">
+			Confirm every substitution.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+				<li><!-- Row Start -->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			:%s/foo/bar/c	
+			</div>
+			<div class="ui-block-b">
+			For each line on the file, replace the first occurrence of foo with bar and confirm every substitution.
+			</div>
+
+		</div>
+		</li><!-- Row End -->
+
+      </ul>
+
+
+

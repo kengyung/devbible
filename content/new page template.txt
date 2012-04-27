@@ -1,0 +1,15 @@
+      <!-- Start of New page -->
+      <div data-role="page" id="sorry">
+
+        <div data-role="header">
+          <h1>Sorry! Not yet implemented!</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+		<p> Hey there! Sorry this part of the app isn't up yet, check back again later. </p>
+		</div><!-- /content -->
+
+        <div data-role="footer" data-position="fixed" data-id="ew-footer" class="ui-splitview-hidden">
+  
+        </div><!-- /footer -->
+      </div><!-- /page -->
