@@ -1,0 +1,36 @@
+<!-- 
+Name: Navigation Panel
+Purpose: Provides a list of links of where to go and information about where the user is
+-->
+
+<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="d">
+
+		<h3>Navigation ...</h3> <!--Expandable button label-->
+		<!-- only visible when resolution is smaller -->
+			
+			<!--FIXIT the Search bar does not align with the list-->
+			<ul data-role="listview" data-theme="c" data-dividertheme="b" data-filter-theme="c">
+			<!-- data-filter="true" data-filter-placeholder="Search ..."  -->
+			
+			
+			<!--Nav Panel Title-->
+			<li><div align="center"><!--INSERT Nav Panel Title--></div></li>
+			
+			<!--Nav Panel Divider-->
+			<li data-role="list-divider"><!--INSERT Nav Panel Category--></li>
+			<!-- Repeat as necessary, unclickable -->
+			
+			<!--Nav Panel Item-->
+			<li><a href="#URL"><!--INSERT Nav Panel Item and update #URL --></a></li>
+			<!-- Repeat as necessary, clickable---->
+			
+			<!--
+			Navigation -> Title
+			
+			IDEs -> Category
+			vim -> Item
+			-->
+			
+			</ul>
+			
+</div>
