@@ -8,12 +8,12 @@ Purpose: Basic template for the pages
 <title>Developer Bible</title>
 
 <!-- INSERT JS/CSS Libraries here -->
-	<link rel="stylesheet"  href="libs/jquery.mobile-1.1.0.min.css" /> 
+	<link rel="stylesheet"  href="libs/jquery.mobile-1.1.0.css" /> 
 	<link rel="stylesheet"  href="libs/layout.css" /> 
 	<!--Contains the code for the layouts based on differet resolutions-->
 	
-	<script src="libs/jquery-1.7.1.min.js"></script>
-	<script src="libs/jquery.mobile-1.1.0.min.js"></script>
+	<script src="libs/jquery-1.7.1.js"></script>
+	<script src="libs/jquery.mobile-1.1.0.js"></script>
 
 </head>
 <body>
@@ -31,6 +31,8 @@ Purpose: Basic template for the pages
 		<div class="content-primary">
 			
 		<!-- INSERT main page content, see content.html for dictionary sample-->
+		
+		<p> This is the content area
 						
 		</div>		
 		
@@ -38,6 +40,13 @@ Purpose: Basic template for the pages
 
 		<!-- INSERT nav_panel.html -->
 
+			<ul data-role="listview" data-theme="c" data-dividertheme="b" data-filter="true" data-filter-placeholder="Search ..." data-filter-theme="c">
+        <li><a href="#home" data-panel="main">Home</a></li>
+		<li data-role="list-divider">IDEs</li>
+		<li><a href="#vim" data-panel="main">VIM</a></li>
+        <li><a href="#eclipse" data-panel="main">Eclipse</a></li>
+        </ul>
+		
 		</div>
 				
 

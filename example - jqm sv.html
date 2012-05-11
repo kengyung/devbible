@@ -1,0 +1,97 @@
+<!-- 
+Name: Basic Page Template
+Purpose: Basic template for the pages
+-->
+
+<html>
+<head>
+<title>Developer Bible</title>
+
+<!-- INSERT JS/CSS Libraries here -->
+	<link rel="stylesheet" href="libs/jquery.mobile.css" />
+	<link rel="stylesheet" href="libs/jquery.mobile.splitview.css" />
+  <link rel="stylesheet"  href="libs/jquery.mobile.grids.collapsible.css" />
+  <script type="text/javascript" src="libs/jquery-1.7.1.js"></script>
+  <script type="text/javascript" src="libs/jquery.mobile.splitview.js"></script>
+  <script type="text/javascript" src="libs/jquery.mobile.js"></script>
+ <script type="text/javascript" src="libs/iscroll-wrapper.js"></script>
+  <script type="text/javascript" src="libs/iscroll.js"></script>
+  
+  <script>
+  var content = document.getElementById('main');
+  
+  
+  function openPage(){ //TODO adding pageName
+  main.innerHTML = '';
+  
+	  if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.open("GET","vim.php",false); //instead of books.xml, pull the html file
+	xmlhttp.send();
+	
+	
+	 main.innerHTML = xmlhttp.responseXML;
+  
+  }
+  
+  </script>
+  
+
+</head>
+<body>
+
+<div data-role="page" class="type-interior">
+
+	<div data-role="header" data-theme="c">
+		<h1>DevBible</h1>
+
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		
+		<div class="content-primary">
+		
+			<!-- INSERT nav_panel.html -->
+			<ul data-role="listview" data-theme="c" data-dividertheme="b" data-filter="true" data-filter-placeholder="Search ..." data-filter-theme="c">
+			<li><a href="javascript:void(0);" onclick="openPage()">Home</a></li>
+			
+			<li data-role="list-divider">IDEs</li>
+			<li><a  href="javascript:void(0);" onclick="openPage()">VIM</a></li>
+			<li><a  href="javascript:void(0);" onclick="openPage()">Eclipse</a></li>
+			
+			</ul>
+		
+
+		
+		<div data-role="footer" data-position="fixed" data-id="ew-footer">
+		<div data-role="navbar">
+		</div>
+		</div>
+		
+		</div>		
+		
+		 <div data-role="panel" data-id="main">
+
+		<!-- INSERT content here-->
+
+				
+
+		</div><!-- /content -->
+
+	<div data-role="footer"  data-theme="c" align="center">
+			<p>&copy; 2011-12 The Three Stooges</p>
+	</div>
+	
+</div><!-- /page -->
+
+
+
+</body>
+</html>
