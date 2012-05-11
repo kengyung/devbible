@@ -12,7 +12,13 @@
   <script type="text/javascript" src="libs/jquery.mobile.js"></script>
  <script type="text/javascript" src="libs/iscroll-wrapper.js"></script>
   <script type="text/javascript" src="libs/iscroll.js"></script>
-</head> 
+
+  <script>
+$(document).bind("mobileinit", function(){
+  $.mobile.touchOverflowEnabled = true;
+});
+</script>
+  </head> 
 
   <body> 
 
